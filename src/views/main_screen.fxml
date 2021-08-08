@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<?scenebuilder-stylesheet views/gameoflife.css?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.FXController" prefHeight="650.0" prefWidth="600.0">
+    <center>
+        <GridPane></GridPane>
+    </center>
+    <bottom>
+        <HBox prefWidth="600">
+            <Button prefWidth="120" alignment="BOTTOM_LEFT" style="-fx-font-family: SansSerif;" text="Pause game" onAction="#handlePauseButtonAction"/>
+            <StackPane prefWidth="360" alignment="CENTER">
+                <Text textAlignment="CENTER" style="-fx-font-family: SansSerif;" text="Generation: 1"></Text>
+            </StackPane>
+            <Button prefWidth="120" alignment="BOTTOM_RIGHT" style="-fx-font-family: SansSerif;" text="Stop game" onAction="#handleStopButtonAction"/>
+        </HBox>
+    </bottom>
+</BorderPane>
